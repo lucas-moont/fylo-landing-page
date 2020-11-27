@@ -1,0 +1,52 @@
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #1c2230;
+    padding: 35px 45px;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 140px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header a{
+    color: #FFF;
+    margin-left: 50px;
+    transition: 1s;
+}
+
+header a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
