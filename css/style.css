@@ -8,6 +8,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    background-color: #181e2a;
 }
 
 a{
@@ -72,14 +73,6 @@ header a:hover{
     align-items: center;
 }
 
-.getStarted h1{
-    width: 45%;
-    font-size: 32px;
-    margin: 30px 0;
-    line-height: 38px;
-    
-}
-
 .getStarted img{
     width: 40%;
     min-width: 280px;
@@ -91,11 +84,33 @@ header a:hover{
     }
 }
 
+.getStarted h1{
+    width: 45%;
+    font-size: 32px;
+    margin: 30px 0;
+    line-height: 38px;
+    min-width: 374px;
+    
+}
+
 .getStarted p{
     width: 32%;
     line-height: 18px;
     word-spacing: 3px;
     margin-bottom: 30px;
+    min-width: 370px;
+}
+
+@media (max-width: 950px){
+    .getStarted h1{
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 500px){
+    .getStarted{
+        background-image: url(/images/bg-curvy-mobile.svg);
+    }
 }
 
 .getStarted a{
@@ -111,3 +126,43 @@ header a:hover{
     background-color: #8cdae4;
     transition: background-color 0.5s linear;
 }
+
+/*FEATURES SECTION */
+
+.features{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+.features .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 906px;
+    flex-wrap: wrap;
+}
+
+.features .container div{
+    margin: 20px 40px 80px;
+    width: 370px;
+}
+
+@media (max-width: 890px){
+    .features .container div{
+        margin: 20px 0px 80px;
+    }
+}
+
+.features h2{
+    margin: 25px 0 10px;
+}
+
+.features p{
+    line-height: 20px;
+}
+
+.features img{
+    height: 78px;
+}
+
