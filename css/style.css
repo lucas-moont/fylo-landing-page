@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -166,3 +167,62 @@ header a:hover{
     height: 78px;
 }
 
+/*STAYPROD SECTION*/
+
+.stayProd{
+    color: #FFF;
+}
+
+.stayProd h1{
+    font-size: 32px;
+    max-width: 374px;
+    margin-bottom: 36px;
+}
+
+.stayProd .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stayProd .container div{
+    padding: 0 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-width: 374px;
+    margin: 40px 0;
+}
+
+.stayProd img{
+    width: 100%;
+}
+
+.stayProd p{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.stayProd a{
+    color: #FFF;
+    display: inline-flex;
+    width: 150.781px;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 5px;
+}
+
+.stayProd a:hover{
+    border-bottom: 1px solid #9fe5e5;
+    color: #9fe5e5;
+}
+
+.stayProd .arrow{
+    height: 16px;
+    width: 16px;
+    margin-left: 6px;
+}
+
+/*need to fix svg*/
+
+/*lembrar de dar padding 45px nas laterais de cada div*/
