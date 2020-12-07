@@ -12,7 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <link rel="stylesheet" href="css/style.css">
@@ -21,7 +21,7 @@
   <header>
     <div class="container">
       <div>
-        <img src="images/logo.svg" alt="">
+        <img src="images/logo.svg" alt="" class='logo'>
       </div>
       <div>
         <a href="#">Features</a> 
@@ -146,34 +146,56 @@
 
       <form action="#">
         <input type="email" name='email' placeholder='johnappleseed@mail.com' id='email'>
-        <button>Get Started For Free</button>
+        <button type='send'>Get Started For Free</button>
       </form>
-      <div class='test'>Textando.</div>
 
       <!--Adicionar duas divs ao form para reformatar. Deixar assim por hoje como placeholder.-->
     </div>
+    <div class="container">
+      <img src="images/logo.svg" alt="" class='logo'>
+    </div>
 
+    <div class="container paddingCorrection">
+      <div class='locationWraper'>
+        <span class='icon'><img src="images/icon-location.svg" alt=""></span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua.</p>
+      </div>
+
+      <div>
+        <div class='infoWraper'>
+          <span class='icon'><img src="images/icon-location.svg" alt=""></span>
+          <p>+1-543-123-4567</p>
+        </div>
+        <div class='infoWraper'>
+          <span class='icon'><img src="images/icon-location.svg" alt=""></span>
+        <p>example@fylo.com</p>
+        </div>
+      </div>
+      <div>
+        <div class='linkWraper'>
+          <a href="">About Us</a>
+          <a href="">Jobs</a>
+          <a href="">Press</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="linkWraper">
+          <a href="">Contact Us Us</a>
+          <a href="">Terms</a>
+          <a href="">Privacy</a>
+        </div>
+      </div>
+
+      <div class='socialMedia'>
+        <a href="#"><img src="images/toppng.com-white-facebook-icon-png-facebook-logo-facebook-facebook-fortnite-logo-transparent-white-176x367.png" alt="" class='iconMedia'></a>
+        <a href="#"><img src="images/twitter.png" alt="" class='iconTwitter'></a>
+        <a href="#"><img src="images/instagram.png" alt="" class='iconMedia'></a>
+      </div>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Lucas Monteiro.</a>.
     </p>
   </footer>
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
 </body>
 </html>
