@@ -43,6 +43,24 @@ header .container {
     width: 100%;
 }
 
+@media (max-width: 522px){
+    header .container{
+        flex-direction: column;
+    }
+
+    header img{
+        margin-bottom: 30px;
+        margin-left: -30px;
+    }
+
+    header .container div,
+    header .container a:first-child{
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 header a{
     color: #FFF;
     margin-left: 50px;
@@ -69,6 +87,12 @@ header a:hover{
     background-position-y: bottom;
     display: flex;
     justify-content: center;
+}
+
+@media (min-width:1400px){
+    .getStarted{
+        padding-top: 30px;
+    }
 }
 
 .getStarted .container{
@@ -496,6 +520,10 @@ footer .iconTwitter{
 @media (max-width:814px){
     footer .container{
         flex-direction: column;
+    }
+
+    footer .container .socialMedia{
+        margin: 25px 0 25px;
     }
 
     .container .infoWraper{
