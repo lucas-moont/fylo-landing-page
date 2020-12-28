@@ -141,14 +141,16 @@
     <div class="getAcess">
       <h1>Get early access today</h1>
 
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+      <p class='acessText'>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
         questions, our support team would be happy to help you.</p>
 
-      <form action="#">
-        <input type="email" name='email' placeholder='johnappleseed@mail.com' id='email'>
-        <button>Get Started For Free</button>
+      <form id='form' action="#">
+        <div>
+          <input type="email" name='email' placeholder='johnappleseed@mail.com' id='email'>
+          <p id='valid'></p>
+        </div>
+          <button type="button" onclick="validation()">Get Started For Free</button>
       </form>
-
       <!--Adicionar duas divs ao form para reformatar. Deixar assim por hoje como placeholder.-->
     </div>
     <div class="container">
@@ -197,5 +199,25 @@
       Coded by <a href="#">Lucas Monteiro.</a>.
     </p>
   </footer>
+  <script type='text/javascript'>
+    function validation(){
+      var form = document.getElementById("form")
+      var email = document.getElementById("email").value
+      var text = document.getElementById("valid")
+      var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (email.match(pattern)){
+        form.classList.add("valid")
+        form.classList.remove("invalid")
+        text.style.color = "#00FF00"
+        text.innerHTML = "Welcome aboard. ;)"
+      }else{
+        form.classList.remove("valid")
+        form.classList.add("invalid")
+        text.style.color = "#F00"
+        text.innerHTML = "Please, enter a valid email adress."
+      }
+    }
+  </script>
 </body>
 </html>

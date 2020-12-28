@@ -366,7 +366,7 @@ footer{
     box-shadow: 7px 10px 5px #07111d;
 }
 
-.getAcess p{
+.getAcess p.acessText{
     margin: 30px 0;
 }
 
@@ -376,6 +376,35 @@ footer{
     flex-wrap: wrap;
 }
 
+
+.getAcess button:hover{
+    background-color: #8cdae4;
+    transition: background-color 0.5s linear;
+}
+
+#email, .getAcess button{
+    margin: 0 10px;
+    border-radius: 40px;
+    border: 0;
+}
+
+.getAcess div:first-child{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#email{
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    font-size: 13.33px;
+    flex: 1;
+}
+
+#email::placeholder{
+    font-size: 10px;
+}
+
 .getAcess button{
     padding: 15px 35px;
     font-weight: 700;
@@ -383,29 +412,29 @@ footer{
     background-color: #50c3d5;
     transition: background-color 0.5s linear;
     cursor: pointer;
+    margin-bottom: 20px;
+    height: 45px;
 }
 
-.getAcess button:hover{
-    background-color: #8cdae4;
-    transition: background-color 0.5s linear;
+.getAcess #valid{
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 35px;
+    margin-top: -10px;
+    color: red;
+    font-size: 12px;
 }
 
-#email{
-    flex: 1;
-    padding: 15px 35px;
-}
-
-#email, .getAcess button{
-    margin: 0 10px 20px;
-    border-radius: 40px;
-    border: 0;
-}
 
 @media (max-width: 726px){
+
     #email{
         flex: 0;
+        margin-bottom: 0px;
     }
-    #email, .getAcess button{
+    #email, 
+    .getAcess button, 
+    .getAcess #valid{
         min-width: 214px;
         padding: 15px 20px;
     }
@@ -418,20 +447,21 @@ footer{
 }
 
 @media (max-width: 717px){
+    .getAcess div:first-child{
+        flex: 0;
+        width: 214px;
+    }
+
+    #email,
+    .getAcess #valid{
+        margin-left: 0;
+    }
+
     .getAcess{
         margin-top: -198px;
     }
 }
 
-.getAcess .test{
-    text-align: left;
-    margin-left: 10px;
-    padding-left: 35px;
-    margin-top: -10px;
-    color: red;
-    font-weight: 700;
-    text-transform: uppercase;
-}
 
 footer .container{
     width: 100%;
